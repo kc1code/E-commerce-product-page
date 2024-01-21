@@ -1,0 +1,166 @@
+.product-image{
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebe7e3;
+    
+}
+
+header {
+    background-color: #49392F;
+    color: white;
+    text-align: left;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-size: 1.5em;
+    margin-right: 10px;
+    font-family: 'Parisienne', cursive;
+}
+
+#header-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.icon, #about {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.coffee-icon {
+    font-size: 1.5em;
+}
+
+.product-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-image-container {
+    width: 70%;
+    position: relative;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-details {
+    max-width: 100%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.product-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.delivery-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.delivery-icon {
+    color: #4caf50;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.star-icon {
+    color: #FFD700;
+}
+
+/* ... rest of the CSS styles ... */
+
+footer {
+    background-color: #49392F;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

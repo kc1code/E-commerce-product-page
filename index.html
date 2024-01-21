@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="header-left">
+            <span id="logo" class="coffee-icon"><i class="fas fa-coffee"></i> Coffee</span>
+        </div>
+        <div id="header-icons">
+            <span class="icon"><i class="fas fa-search"></i></span>
+            <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+            <span class="icon"><i class="fab fa-instagram"></i></span>
+            <a id="about" href="#" class="icon">About</a>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="thumbnail-container">
+            <div class="thumbnail" onclick="changeImage('coffee-image1.jpg')">
+                <img src="C:\Users\HP\OneDrive\Desktop\e-commerce\images\t1.jpeg" alt="Thumbnail 1">
+            </div>
+            <div class="thumbnail" onclick="changeImage('coffee-image2.jpg')">
+                <img src="C:\Users\HP\OneDrive\Desktop\e-commerce\images\t2.jpeg" alt="Thumbnail 2">
+            </div>
+            <div class="thumbnail" onclick="changeImage('coffee-image3.jpg')">
+                <img src="C:\Users\HP\OneDrive\Desktop\e-commerce\images\t3.jpeg" alt="Thumbnail 3">
+            </div>
+        </div>
+        <div class="product-image-container">
+            <!-- Add id="mainImage" to the main product image -->
+            <img class="product-image" id="mainImage" src="C:\Users\HP\OneDrive\Desktop\e-commerce\images\c.jpeg" alt="Coffee Product Image">
+        </div>
+        <div class="product-details">
+            <h2 class="product-title">Deligoo Blend Coffee</h2>
+            <p class="product-description">Indulge in the rich and flavorful taste of our premium blend coffee.
+                Sourced from the finest coffee beans around the world.</p>
+            <p class="product-price">$12.99 | Rs 1079.79 </p>
+            <hr>
+            <div class="delivery-icons">
+                <i class="fas fa-truck delivery-icon"></i> Free Delivery
+                <i class="fas fa-money-bill delivery-icon" style="margin-left: 20px;"></i> Pay on Delivery
+            </div>
+            <hr>
+            <div class="rating">
+                Rating: 
+                <span class="star-icon">&#9733;</span>
+                <span class="star-icon">&#9733;</span>
+                <span class="star-icon">&#9733;</span>
+                <span class="star-icon">&#9734;</span>
+                <span class="star-icon">&#9734;</span>
+            </div>
+            <hr>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Order Your Coffee now:)
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.addEventListener('click', function() {
+                var imageSrc = this.querySelector('img').src;
+                changeImage(imageSrc);
+            });
+        });
+    });
+    </script>
+    
+</body>
+
+</html>
